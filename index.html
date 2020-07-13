@@ -560,9 +560,9 @@
       agent: "",
     };
   </script>
-  <meta property="og:title" content="titre de l'incident ou du challenge" />
+
   <meta property="og:type" content="website" />
-  <meta property="og:description" content="description ici" />
+
   <meta
     property="og:image"
     content="https://avatars2.githubusercontent.com/u/38349053?s=460&u=d6d52b727db5aa4615b2cc423074824741797562&v=4"
@@ -587,6 +587,15 @@
 </head>
 
 <script language="javascript">
+  var meta = document.createElement("meta");
+  meta.httpEquiv = "og:title";
+  meta.content = "test azaezgzgzgzgzgzggzgzgzgzzg";
+  document.getElementsByTagName("head")[0].appendChild(meta);
+
+  var meta2 = document.createElement("meta");
+  meta.httpEquiv = "og:description";
+  meta.content = "test azaezgzgzgzgzgzggzgzgzgzzg desription";
+  document.getElementsByTagName("head")[0].appendChild(meta2);
   window.location.replace(
     "https://play.google.com/store/apps/details?id=com.volkeno.actionmap"
   );
