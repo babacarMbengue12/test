@@ -587,14 +587,9 @@
 </head>
 
 <script language="javascript">
-  var meta = document.createElement("meta");
-  meta.httpEquiv = "og:title";
-  meta.content = "test azaezgzgzgzgzgzggzgzgzgzzg";
-  document.getElementsByTagName("head")[0].appendChild(meta);
-
   var meta2 = document.createElement("meta");
-  meta.httpEquiv = "og:description";
-  meta.content = "test azaezgzgzgzgzgzggzgzgzgzzg desription";
+  meta2["property"] = "og:description";
+  meta2.content = "test azaezgzgzgzgzgzggzgzgzgzzg desription";
   document.getElementsByTagName("head")[0].appendChild(meta2);
   window.location.replace(
     "https://play.google.com/store/apps/details?id=com.volkeno.actionmap"
